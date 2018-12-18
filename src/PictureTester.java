@@ -24,11 +24,25 @@ public class PictureTester
     beach.explore();
   }
 
-  public static void negate() {
+  public static void testNegate() {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
     beach.negate();
     beach.explore();
+  }
+
+  public static void testGrayscale() {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
+
+  public static void testFixUnderwater() {
+    Picture water = new Picture("water.jpg");
+    water.explore();
+    water.fixUnderwater();
+    water.explore();
   }
 
   /** Method to test mirrorVertical */
@@ -73,12 +87,12 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
-    testKeepOnlyBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
-    //testFixUnderwater();
+    testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
